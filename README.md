@@ -215,7 +215,7 @@ especially if a deviation would make your code more readable.
 
             var rollInitiative = function() { // Roll die here };
 
-    -   Incorrect:
+    -   Correct:
 
             var rollInitiative = function () { // Roll die here };
 
