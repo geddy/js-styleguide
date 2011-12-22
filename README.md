@@ -140,11 +140,9 @@ especially if a deviation would make your code more readable.
 
         if (gotInitiative) {
           attackDragon();
-        }
-        else if (speaksDragon) {
+        } else if (speaksDragon) {
           tryNegotiating();
-        }
-        else {
+        } else {
           runAway();
         }
 
