@@ -29,8 +29,12 @@ especially if a deviation would make your code more readable.
 
 ### Notes
 
-1.  Variable/method names in all lowercase with underscores SHOULD NOT
-    be used unless mimicking another API.
+1.  Variable/method names in all lowercase with underscores (AKA
+    'snake-case') SHOULD NOT be used unless mimicking another
+    API. Object-keys received in snake-case from JSON-parsed
+    API-data may be used as-is, but conversion to camel-case is
+    preferred if possible.
+
     -   Incorrect:
 
             wizard_hat, vorpal_blade
@@ -97,7 +101,7 @@ especially if a deviation would make your code more readable.
     -   Correct:
 
             var currentThiefLevel = 8
-              ,  canBackstab = true
+              , canBackstab = true
               , isNpc = true;
 
 3.  Variable names SHOULD NOT include ‘temp’ or ‘tmp’. — all local
