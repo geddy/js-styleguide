@@ -376,7 +376,7 @@ Enumeration keys: Uppercase with underscores
 
     -   Correct:
 
-            var char = 'charClass-' + charClass;
-            var combat = 'combatStatus-' + armorClass + '-' + toHitBonus;
-            var elem = document.getElementById(char + '_' + combat);
+            var char = 'charClass-' + charClass
+              , combat = 'combatStatus-' + armorClass + '-' + toHitBonus
+              , elem = document.getElementById(char + '_' + combat);
 
