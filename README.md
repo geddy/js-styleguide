@@ -1,5 +1,12 @@
 # JS Styleguide
 
+This set of guidelines started its life as the [JavaScript
+styleguide for OSAF's Chandler Web
+UI](http://chandlerproject.org/bin/view/Projects/JavaScriptStyleguide),
+circa 2006. Probably the biggest changes since then are the
+switch to two-space indentation, and use of leading commas
+instead of trailing ('comma-first').
+
 These are merely guidelines. They should not be adhered to mechanically,
 especially if a deviation would make your code more readable.
 
