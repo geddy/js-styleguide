@@ -15,36 +15,47 @@ especially if a deviation would make your code more readable.
 ### Overview
 
 Constructor:  CamelCase with an initial capital letter
+
     MightyBalrog, MagicWeapon
 
 Namespace name: camelCase with an initial lowercase letter
+
     clericSpells, savingThrows
 
 Public method: camelCase with an initial lowercase letter
+
     castDimensionalDoorway, rollForInitiative
 
 Public variable: camelCase with an initial lowercase letter
+
     materialComponents, hasTrackingAbilities
 
 Private method: camelCase with an initial lowercase letter and underscore
+
     _getHealth
 
 Private variable: camelCase with an initial lowercase letter and underscore
+
     _backstabAbility
 
 Method arguments: camelCase with an initial lowercase letter
+
     halfOrcArmy
 
 Local variables: camelCase with an initial lowercase letter
+
     isHumanoid, levelCount
 
 Object keys: camelCase with an initial lowercase letter
+
     character.armorClass, character.hitPoints
 
 ‘Constants’: Uppercase with underscores
+
     CLERIC_PLAYER, GAME_MASTER
 
 Enumeration keys: Uppercase with underscores
+
     characterClass.MAGIC_USER, armorTypes.PLATE_MAIL
 
 ### Notes
