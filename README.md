@@ -167,12 +167,17 @@ Enumeration keys: Uppercase with underscores
 
 1.  Function declaration:
 
-        function checkForTraps(dexterity, level) {
-        // Do stuff to check for traps here
-        }
         var checkForSecretDoors = function (race, level) {
           // Stuff for check here
         };
+        
+    
+    > Makes it easier to understand "functions as an object". I've found that when you show new developers
+    > a function being assigned to a variable it suddenly becomes much more obvious that a function is actually 
+    > an object and can be manipulated as such (and that a function can be passed as an argument to another function). 
+    >
+    > -- <cite><i>John Resig</i> suggest in ["JavaScript as a First Language"][1]</cite>
+    
 
 2.  If statements:
 
@@ -380,3 +385,5 @@ Enumeration keys: Uppercase with underscores
               , combat = 'combatStatus-' + armorClass + '-' + toHitBonus
               , elem = document.getElementById(char + '_' + combat);
 
+
+[1]: http://ejohn.org/blog/javascript-as-a-first-language/ "JavaScript as a First Language" 
