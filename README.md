@@ -124,7 +124,7 @@ Enumeration keys: Uppercase with underscores
 
     -   Correct:
 
-            var magicItemCount = 0;
+            var magicItemCount = 0
               , magicSwordName = ''
               , wizardNpc = null;
 
