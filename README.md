@@ -165,14 +165,16 @@ Enumeration keys: Uppercase with underscores
 
 ### Overview
 
-1.  Function declaration:
+1.  Function-declarations / function-expressions (in general declarations should
+be preferred to expressions):
+
+        var checkForSecretDoors = function (race, level) {
+          // Stuff for check here
+        };
 
         function checkForTraps(dexterity, level) {
         // Do stuff to check for traps here
         }
-        var checkForSecretDoors = function (race, level) {
-          // Stuff for check here
-        };
 
 2.  If statements:
 
@@ -296,7 +298,7 @@ Enumeration keys: Uppercase with underscores
               ignoreTalk();
             }
 
-5.  Parenthesis in function declarations SHOULD NOT have a space before
+5.  Parentheses in function-expressions SHOULD NOT have a space before
     them.
     -   Incorrect:
 
