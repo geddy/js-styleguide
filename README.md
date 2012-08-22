@@ -189,142 +189,130 @@ be preferred to expressions):
 
 3. For statements:
 
-    for (var i = 0; i < guards.length; i++) {
-      rollTwentySided(guards[i]);
-    }
+            for (var i = 0; i < guards.length; i++) {
+              rollTwentySided(guards[i]);
+            }
 
 4. While statements:
 
-    while (charactersInjured) {
-      castCureLightWounds();
-      charactersInjured = checkCharacterHealth();
-    }
+            while (charactersInjured) {
+              castCureLightWounds();
+              charactersInjured = checkCharacterHealth();
+            }
 
 5. Switch statements:
 
-    switch (characterClass) {
-      case 'ranger':
-        // Ranger special stuff here
-        // Fallthrough
-      case 'fighter':
-        // Do fighter stuff
-        break;
-      case 'magicUser':
-        // Do mage-specific stuff
-        break;
-      default:
-        // do nothing
-    }
+            switch (characterClass) {
+              case 'ranger':
+                // Ranger special stuff here
+                // Fallthrough
+              case 'fighter':
+                // Do fighter stuff
+                break;
+              case 'magicUser':
+                // Do mage-specific stuff
+                break;
+              default:
+                // do nothing
+            }
 
 6. Try-catch-finally statements:
 
-    try {
-      pickPocket();
-    }
-    catch(e) {
-      lookInconspicuous();
-      reportBack(e);
-    }
-    finally {
-      runLikeHell();
-    }
+            try {
+              pickPocket();
+            }
+            catch(e) {
+              lookInconspicuous();
+              reportBack(e);
+            }
+            finally {
+              runLikeHell();
+            }
 
 7. Object literal:
 
-    var obj = {
-      spellName: 'Invisible Stalker'
-    , numberOfFighters: 3
-    , checkForTraps = function() {
-        // Do trap checking
-      }
-    };
+            var obj = {
+              spellName: 'Invisible Stalker'
+            , numberOfFighters: 3
+            , checkForTraps = function() {
+                // Do trap checking
+              }
+            };
 
-    var obj = {
-      staff: 'Staff of the Magi'
-    , wand: 'Wand of Negation'
-    , misc: 'Boots of Elvenkind'
-    };
+            var obj = {
+              staff: 'Staff of the Magi'
+            , wand: 'Wand of Negation'
+            , misc: 'Boots of Elvenkind'
+            };
 
 ### Notes
 
 1. Function literals MUST include a space between the word ‘function’
     and the parentheses. (Otherwise it appears to be a function with the
     name of ‘function.’)
-
   - Incorrect:
 
-    var rollInitiative = function() { // Roll die here };
-
+            var rollInitiative = function() { // Roll die here };
   - Correct:
 
-    var rollInitiative = function () { // Roll die here };
+            var rollInitiative = function () { // Roll die here };
 
 2. Line continuations should be indicated by double indentation.
-
   - Incorrect:
 
-  var localMonsterRumors = getLocalGossip(inkeeper,
-                                          localInn,
-                                          numberOfClerics,
-                                          pintsOfAlePurchased,
-                                          charismaAjustment);
-
+            var localMonsterRumors = getLocalGossip(inkeeper,
+                                                    localInn,
+                                                    numberOfClerics,
+                                                    pintsOfAlePurchased,
+                                                    charismaAjustment);
   - Correct:
 
-    var localMonsterRumors = getLocalGossip(inkeeper,
-        localInn, numberOfClerics, pintsOfAlePurchased,
-        charismaAjustment);
+            var localMonsterRumors = getLocalGossip(inkeeper,
+                localInn, numberOfClerics, pintsOfAlePurchased,
+                charismaAjustment);
 
 3. If-else statements (also while, et al) MAY be written on a single
     line, but MUST use brackets.
-
   - Incorrect:
 
-    if (isUndead) grabFire();
-
+            if (isUndead) grabFire();
   - Correct:
 
-    if (isUndead) { grabFire(); }
+            if (isUndead) { grabFire(); }
 
 4. Parenthesis in conditional statements (if, while, for, etc.) SHOULD
     have a space before them.
-
   - Incorrect:
 
-    if(isNpc) {
-      ignoreTalk();
-    }
-
+            if(isNpc) {
+              ignoreTalk();
+            }
   - Correct:
 
-    if (isNpc) {
-      ignoreTalk();
-    }
+            if (isNpc) {
+              ignoreTalk();
+            }
 
 5. Parentheses in function-expressions SHOULD NOT have a space before
     them.
-
   - Incorrect:
 
-    function getArmorClass (armorType, dexterity) {
-      // Get AC stuff here
-    }
-
+            function getArmorClass (armorType, dexterity) {
+              // Get AC stuff here
+            }
   - Correct:
 
-    function getArmorClass(armorType, dexterity) {
-      // Get AC stuff here
-    }
+            function getArmorClass(armorType, dexterity) {
+              // Get AC stuff here
+            }
 
 6. Commas SHOULD be followed by spaces.
-
   - Incorrect:
 
-    getExperiencePoints(monster,hitPoints);
-
+            getExperiencePoints(monster,hitPoints);
   - Correct:
 
-    getExperiencePoints(monster, hitPoints);
+            getExperiencePoints(monster, hitPoints);
 
 7. The colon in object literal notation SHOULD have no space in front
     of it, and be followed by a single space. Entries after the initial
@@ -333,60 +321,51 @@ be preferred to expressions):
     line (so-called ‘Allman style’), due to automatic
     semicolon-insertion when returning an object literal. Leading commas
     should align vertically with the closing bracket on the final line.
-
   - Incorrect:
 
-    var newCharacter = {
-      race:'gnome',
-      class:'figheter',
-      isNpc:false
-    };
-
+            var newCharacter = {
+              race:'gnome',
+              class:'figheter',
+              isNpc:false
+            };
   - Also incorrect:
 
-    var newCharacter = {
-      race : 'gnome',
-      class : 'figheter',
-      isNpc : false
-    };
-
+            var newCharacter = {
+              race : 'gnome',
+              class : 'figheter',
+              isNpc : false
+            };
   - Correct:
 
-    var newCharacter = {
-      race: 'gnome'
-    , class: 'figheter'
-    , isNpc: false
-    };
+            var newCharacter = {
+              race: 'gnome'
+            , class: 'figheter'
+            , isNpc: false
+            };
 
 8. Operators SHOULD both have a space before and after.
-
   - Incorrect:
 
-    var message = speaksDrow? getMessageinDrow():'You do not speak Drow.';
-
+            var message = speaksDrow? getMessageinDrow():'You do not speak Drow.';
   - Correct:
 
-    var message = speaksDrow ? getMessageinDrow() : 'You do not speak Drow.';
-
+            var message = speaksDrow ? getMessageinDrow() : 'You do not speak Drow.';
   - Incorrect:
 
-    var thaco = hit+adjustment-randomFactor;
-
+            var thaco = hit+adjustment-randomFactor;
   - Correct:
 
-    var thaco = hit + adjustment - randomFactor;
+            var thaco = hit + adjustment - randomFactor;
 
 9. Lengthy string parameters SHOULD be placed into variables before
     using.
-
   - Incorrect:
 
-    var elem = document.getElementById('charClass-' + charClass +
-        + '_combatStats-' + armorClass + '-' + toHitBonus);
-
+            var elem = document.getElementById('charClass-' + charClass +
+                + '_combatStats-' + armorClass + '-' + toHitBonus);
   - Correct:
 
-    var char = 'charClass-' + charClass
-      , combat = 'combatStatus-' + armorClass + '-' + toHitBonus
-      , elem = document.getElementById(char + '_' + combat);
+            var char = 'charClass-' + charClass
+              , combat = 'combatStatus-' + armorClass + '-' + toHitBonus
+              , elem = document.getElementById(char + '_' + combat);
 
