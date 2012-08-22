@@ -12,10 +12,10 @@ especially if a deviation would make your code more readable.
 
 ## General
 
-1.  Code SHOULD be indented with spaces only (not tabs).
-2.  Each level of indentation SHOULD consist of 2 spaces.
-3.  Lines SHOULD be 80 characters max.
-4.  Code MUST use semicolons at the end of statements.
+1. Code SHOULD be indented with spaces only (not tabs).
+2. Each level of indentation SHOULD consist of 2 spaces.
+3. Lines SHOULD be 80 characters max.
+4. Code MUST use semicolons at the end of statements.
 
 ## Naming
 
@@ -67,106 +67,105 @@ Enumeration keys: Uppercase with underscores
 
 ### Notes
 
-1.  Variable/method names in all lowercase with underscores (AKA
+1. Variable/method names in all lowercase with underscores (AKA
     'snake-case') SHOULD NOT be used unless mimicking another
     API. Object-keys received in snake-case from JSON-parsed
     API-data may be used as-is, but conversion to camel-case is
     preferred if possible.
-
-    -   Incorrect:
+  - Incorrect:
 
             wizard_hat, vorpal_blade
 
-    -   Correct:
+   - Correct:
 
             wizardHat, vorpalBlade
 
-2.  Acronyms in variable/method names SHOULD NOT be upppercased.
-    -   Incorrect:
+2. Acronyms in variable/method names SHOULD NOT be upppercased.
+  - Incorrect:
 
             bartenderNPC, newRPG
 
-    -   Correct:
+   - Correct:
 
             bartenderNpc, newRpg
 
-3.  Variable/method names SHOULD be written in English.
-    -   Incorrect:
+3. Variable/method names SHOULD be written in English.
+  - Incorrect:
 
             dekaiKatana
 
-    -   Correct:
+   - Correct:
 
             giganticSword
 
-4.  Variable/method names SHOULD NOT be abbreviated to the point of
+4. Variable/method names SHOULD NOT be abbreviated to the point of
     being unclear.
-    -   Incorrect:
+  - Incorrect:
 
             wndMnstr[3]
 
-    -   Correct:
+   - Correct:
 
             wanderingMonster[3]
 
 ## Variables
 
-1.  Variables SHOULD be initialized at the top of function scope — if
+1. Variables SHOULD be initialized at the top of function scope — if
     possible, in a way that indicates what type of value they will hold.
     Null initializations are acceptable. There should be only one `var`
     keyword, used on the first variable declaration, and subsequent
     variables should be declared using an initial comma.
-    -   Incorrect:
+  - Incorrect:
 
             var magicItemCount;
             var magicSwordName = '';
             var wizardNpc;
 
-    -   Correct:
+   - Correct:
 
             var magicItemCount = 0
               , magicSwordName = ''
               , wizardNpc = null;
 
-2.  Variable declarations SHOULD NOT include extra spaces before the
+2. Variable declarations SHOULD NOT include extra spaces before the
     equals sign to align the variable values.
-    -   Incorrect:
+  - Incorrect:
 
             var currentThiefLevel = 8
               , canBackstab       = true
               , isNpc             = true;
 
-    -   Correct:
+   - Correct:
 
             var currentThiefLevel = 8
               , canBackstab = true
               , isNpc = true;
 
-3.  Variable names SHOULD NOT include ‘temp’ or ‘tmp’. — all local
+3. Variable names SHOULD NOT include ‘temp’ or ‘tmp’. — all local
     variables are by definition temporary.
-    -   Incorrect:
+  - Incorrect:
 
             tempString, tmpDate
 
-    -   Correct:
+   - Correct:
 
             str, dt
 
-4.  Magic numbers SHOULD NOT be used. Use a constant instead.
-    -   Incorrect:
+4. Magic numbers SHOULD NOT be used. Use a constant instead.
+  - Incorrect:
 
             42
 
-    -   Correct:
+   - Correct:
 
             ANSWER_TO_THE_QUESTION_OF_LIFE
 
-5.  `self` should be used as the variable name to store scope.
-    -   Incorrect:
+5. `self` should be used as the variable name to store scope.
+  - Incorrect:
 
             var that = this;
 
-    -   Correct:
+   - Correct:
 
             var self = this;
 
@@ -174,7 +173,7 @@ Enumeration keys: Uppercase with underscores
 
 ### Overview
 
-1.  Function-declarations / function-expressions (in general declarations should
+1. Function-declarations / function-expressions (in general declarations should
 be preferred to expressions):
 
         var checkForSecretDoors = function (race, level) {
@@ -185,7 +184,7 @@ be preferred to expressions):
         // Do stuff to check for traps here
         }
 
-2.  If statements:
+2. If statements:
 
         if (gotInitiative) {
           attackDragon();
@@ -197,20 +196,20 @@ be preferred to expressions):
           runAway();
         }
 
-3.  For statements:
+3. For statements:
 
         for (var i = 0; i < guards.length; i++) {
           rollTwentySided(guards[i]);
         }
 
-4.  While statements:
+4. While statements:
 
         while (charactersInjured) {
           castCureLightWounds();
           charactersInjured = checkCharacterHealth();
         }
 
-5.  Switch statements:
+5. Switch statements:
 
         switch (characterClass) {
           case 'ranger':
@@ -226,7 +225,7 @@ be preferred to expressions):
             // do nothing
         }
 
-6.  Try-catch-finally statements:
+6. Try-catch-finally statements:
 
         try {
           pickPocket();
@@ -239,7 +238,7 @@ be preferred to expressions):
             runLikeHell();
         }
 
-7.  Object literal:
+7. Object literal:
 
         var obj = {
           spellName: 'Invisible Stalker'
@@ -257,19 +256,19 @@ be preferred to expressions):
 
 ### Notes
 
-1.  Function literals MUST include a space between the word ‘function’
+1. Function literals MUST include a space between the word ‘function’
     and the parentheses. (Otherwise it appears to be a function with the
     name of ‘function.’)
-    -   Incorrect:
+  - Incorrect:
 
             var rollInitiative = function() { // Roll die here };
 
-    -   Correct:
+   - Correct:
 
             var rollInitiative = function () { // Roll die here };
 
-2.  Line continuations should be indicated by double indentation.
-    -   Incorrect:
+2. Line continuations should be indicated by double indentation.
+  - Incorrect:
 
             var localMonsterRumors = getLocalGossip(inkeeper,
                                                     localInn,
@@ -277,67 +276,67 @@ be preferred to expressions):
                                                     pintsOfAlePurchased,
                                                     charismaAjustment);
 
-    -   Correct:
+   - Correct:
 
             var localMonsterRumors = getLocalGossip(inkeeper,
                 localInn, numberOfClerics, pintsOfAlePurchased,
                 charismaAjustment);
 
-3.  If-else statements (also while, et al) MAY be written on a single
+3. If-else statements (also while, et al) MAY be written on a single
     line, but MUST use brackets.
-    -   Incorrect:
+  - Incorrect:
 
             if (isUndead) grabFire();
 
-    -   Correct:
+   - Correct:
 
             if (isUndead) { grabFire(); }
 
-4.  Parenthesis in conditional statements (if, while, for, etc.) SHOULD
+4. Parenthesis in conditional statements (if, while, for, etc.) SHOULD
     have a space before them.
-    -   Incorrect:
+  - Incorrect:
 
             if(isNpc) {
               ignoreTalk();
             }
 
-    -   Correct:
+   - Correct:
 
             if (isNpc) {
               ignoreTalk();
             }
 
-5.  Parentheses in function-expressions SHOULD NOT have a space before
+5. Parentheses in function-expressions SHOULD NOT have a space before
     them.
-    -   Incorrect:
+  - Incorrect:
 
             function getArmorClass (armorType, dexterity) {
               // Get AC stuff here
             }
 
-    -   Correct:
+   - Correct:
 
             function getArmorClass(armorType, dexterity) {
               // Get AC stuff here
             }
 
-6.  Commas SHOULD be followed by spaces.
-    -   Incorrect:
+6. Commas SHOULD be followed by spaces.
+  - Incorrect:
 
             getExperiencePoints(monster,hitPoints);
 
-    -   Correct:
+   - Correct:
 
             getExperiencePoints(monster, hitPoints);
 
-7.  The colon in object literal notation SHOULD have no space in front
+7. The colon in object literal notation SHOULD have no space in front
     of it, and be followed by a single space. Entries after the initial
     item MUST be separated by leading commas (i.e., ‘comma-first’), not
     trailing commas. The opening bracket MUST NOT be dropped to a new
     line (so-called ‘Allman style’), due to automatic
     semicolon-insertion when returning an object literal. Leading commas
     should align vertically with the closing bracket on the final line.
-    -   Incorrect:
+  - Incorrect:
 
             var newCharacter = {
               race:'gnome',
@@ -353,7 +352,7 @@ be preferred to expressions):
               isNpc : false
             };
 
-    -   Correct:
+   - Correct:
 
             var newCharacter = {
               race: 'gnome'
@@ -361,31 +360,31 @@ be preferred to expressions):
             , isNpc: false
             };
 
-8.  Operators SHOULD both have a space before and after.
-    -   Incorrect:
+8. Operators SHOULD both have a space before and after.
+  - Incorrect:
 
             var message = speaksDrow? getMessageinDrow():'You do not speak Drow.';
 
-    -   Correct:
+   - Correct:
 
             var message = speaksDrow ? getMessageinDrow() : 'You do not speak Drow.';
 
-    -   Incorrect:
+  - Incorrect:
 
             var thaco = hit+adjustment-randomFactor;
 
-    -   Correct:
+   - Correct:
 
             var thaco = hit + adjustment - randomFactor;
 
-9.  Lengthy string parameters SHOULD be placed into variables before
+9. Lengthy string parameters SHOULD be placed into variables before
     using.
-    -   Incorrect:
+  - Incorrect:
 
             var elem = document.getElementById('charClass-' + charClass +
                 + '_combatStats-' + armorClass + '-' + toHitBonus);
 
-    -   Correct:
+   - Correct:
 
             var char = 'charClass-' + charClass
               , combat = 'combatStatus-' + armorClass + '-' + toHitBonus
