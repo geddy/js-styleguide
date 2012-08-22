@@ -167,25 +167,25 @@ Enumeration keys: Uppercase with underscores
 1. Function-declarations / function-expressions (in general declarations should
 be preferred to expressions):
 
-        var checkForSecretDoors = function (race, level) {
-          // Stuff for check here
-        };
+            var checkForSecretDoors = function (race, level) {
+              // Stuff for check here
+            };
 
-        function checkForTraps(dexterity, level) {
-        // Do stuff to check for traps here
-        }
+            function checkForTraps(dexterity, level) {
+            // Do stuff to check for traps here
+            }
 
 2. If statements:
 
-    if (gotInitiative) {
-      attackDragon();
-    }
-    else if (speaksDragon) {
-      tryNegotiating();
-    }
-    else {
-      runAway();
-    }
+            if (gotInitiative) {
+              attackDragon();
+            }
+            else if (speaksDragon) {
+              tryNegotiating();
+            }
+            else {
+              runAway();
+            }
 
 3. For statements:
 
