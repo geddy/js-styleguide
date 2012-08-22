@@ -74,18 +74,18 @@ Enumeration keys: Uppercase with underscores
     preferred if possible.
   - Incorrect:
 
-        wizard_hat, vorpal_blade
+          wizard_hat, vorpal_blade
   - Correct:
 
-        wizardHat, vorpalBlade
+          wizardHat, vorpalBlade
 
 2. Acronyms in variable/method names SHOULD NOT be upppercased.
   - Incorrect:
 
-        bartenderNPC, newRPG
+          bartenderNPC, newRPG
   - Correct:
 
-        bartenderNpc, newRpg
+          bartenderNpc, newRpg
 
 3. Variable/method names SHOULD be written in English.
 
