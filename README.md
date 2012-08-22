@@ -161,6 +161,15 @@ Enumeration keys: Uppercase with underscores
 
             ANSWER_TO_THE_QUESTION_OF_LIFE
 
+5.  `self` should be used as the variable name to store scope.
+    -   Incorrect:
+
+            var that = this;
+
+    -   Correct:
+
+            var self = this;
+
 ## Coding Style
 
 ### Overview
