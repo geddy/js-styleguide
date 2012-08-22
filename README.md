@@ -88,25 +88,21 @@ Enumeration keys: Uppercase with underscores
             bartenderNpc, newRpg
 
 3. Variable/method names SHOULD be written in English.
-
   - Incorrect:
 
-    dekaiKatana
-
+            dekaiKatana
   - Correct:
 
-    giganticSword
+            giganticSword
 
 4. Variable/method names SHOULD NOT be abbreviated to the point of
     being unclear.
-
   - Incorrect:
 
-    wndMnstr[3]
-
+            wndMnstr[3]
   - Correct:
 
-    wanderingMonster[3]
+            wanderingMonster[3]
 
 ## Variables
 
