@@ -73,14 +73,18 @@ Enumeration keys: Uppercase with underscores
     API-data may be used as-is, but conversion to camel-case is
     preferred if possible.
   - Incorrect:
+
         wizard_hat, vorpal_blade
   - Correct:
+
         wizardHat, vorpalBlade
 
 2. Acronyms in variable/method names SHOULD NOT be upppercased.
   - Incorrect:
+
         bartenderNPC, newRPG
   - Correct:
+
         bartenderNpc, newRpg
 
 3. Variable/method names SHOULD be written in English.
