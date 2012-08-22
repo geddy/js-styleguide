@@ -111,64 +111,54 @@ Enumeration keys: Uppercase with underscores
     Null initializations are acceptable. There should be only one `var`
     keyword, used on the first variable declaration, and subsequent
     variables should be declared using an initial comma.
-
   - Incorrect:
 
-    var magicItemCount;
-    var magicSwordName = '';
-    var wizardNpc;
-
+            var magicItemCount;
+            var magicSwordName = '';
+            var wizardNpc;
   - Correct:
 
-    var magicItemCount = 0
-      , magicSwordName = ''
-      , wizardNpc = null;
+            var magicItemCount = 0
+              , magicSwordName = ''
+              , wizardNpc = null;
 
 2. Variable declarations SHOULD NOT include extra spaces before the
     equals sign to align the variable values.
-
   - Incorrect:
 
-    var currentThiefLevel = 8
-      , canBackstab       = true
-      , isNpc             = true;
-
+            var currentThiefLevel = 8
+              , canBackstab       = true
+              , isNpc             = true;
   - Correct:
 
-    var currentThiefLevel = 8
-      , canBackstab = true
-      , isNpc = true;
+            var currentThiefLevel = 8
+              , canBackstab = true
+              , isNpc = true;
 
 3. Variable names SHOULD NOT include ‘temp’ or ‘tmp’. — all local
     variables are by definition temporary.
-
   - Incorrect:
 
-    tempString, tmpDate
-
+            tempString, tmpDate
   - Correct:
 
-    str, dt
+            str, dt
 
 4. Magic numbers SHOULD NOT be used. Use a constant instead.
-
   - Incorrect:
 
             42
-
   - Correct:
 
-    ANSWER_TO_THE_QUESTION_OF_LIFE
+            ANSWER_TO_THE_QUESTION_OF_LIFE
 
 5. `self` should be used as the variable name to store scope.
-
   - Incorrect:
 
-    var that = this;
-
+            var that = this;
   - Correct:
 
-    var self = this;
+            var self = this;
 
 ## Coding Style
 
