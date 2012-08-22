@@ -72,6 +72,7 @@ Enumeration keys: Uppercase with underscores
     API. Object-keys received in snake-case from JSON-parsed
     API-data may be used as-is, but conversion to camel-case is
     preferred if possible.
+
   - Incorrect:
 
     wizard_hat, vorpal_blade
@@ -81,6 +82,7 @@ Enumeration keys: Uppercase with underscores
     wizardHat, vorpalBlade
 
 2. Acronyms in variable/method names SHOULD NOT be upppercased.
+
   - Incorrect:
 
     bartenderNPC, newRPG
@@ -90,6 +92,7 @@ Enumeration keys: Uppercase with underscores
     bartenderNpc, newRpg
 
 3. Variable/method names SHOULD be written in English.
+
   - Incorrect:
 
     dekaiKatana
@@ -100,6 +103,7 @@ Enumeration keys: Uppercase with underscores
 
 4. Variable/method names SHOULD NOT be abbreviated to the point of
     being unclear.
+
   - Incorrect:
 
     wndMnstr[3]
@@ -115,6 +119,7 @@ Enumeration keys: Uppercase with underscores
     Null initializations are acceptable. There should be only one `var`
     keyword, used on the first variable declaration, and subsequent
     variables should be declared using an initial comma.
+
   - Incorrect:
 
     var magicItemCount;
@@ -129,6 +134,7 @@ Enumeration keys: Uppercase with underscores
 
 2. Variable declarations SHOULD NOT include extra spaces before the
     equals sign to align the variable values.
+
   - Incorrect:
 
     var currentThiefLevel = 8
@@ -143,6 +149,7 @@ Enumeration keys: Uppercase with underscores
 
 3. Variable names SHOULD NOT include ‘temp’ or ‘tmp’. — all local
     variables are by definition temporary.
+
   - Incorrect:
 
     tempString, tmpDate
@@ -152,6 +159,7 @@ Enumeration keys: Uppercase with underscores
     str, dt
 
 4. Magic numbers SHOULD NOT be used. Use a constant instead.
+
   - Incorrect:
 
             42
@@ -161,6 +169,7 @@ Enumeration keys: Uppercase with underscores
     ANSWER_TO_THE_QUESTION_OF_LIFE
 
 5. `self` should be used as the variable name to store scope.
+
   - Incorrect:
 
     var that = this;
@@ -259,15 +268,17 @@ be preferred to expressions):
 1. Function literals MUST include a space between the word ‘function’
     and the parentheses. (Otherwise it appears to be a function with the
     name of ‘function.’)
+
   - Incorrect:
 
     var rollInitiative = function() { // Roll die here };
 
   - Correct:
 
-            var rollInitiative = function () { // Roll die here };
+    var rollInitiative = function () { // Roll die here };
 
 2. Line continuations should be indicated by double indentation.
+
   - Incorrect:
 
   var localMonsterRumors = getLocalGossip(inkeeper,
@@ -284,6 +295,7 @@ be preferred to expressions):
 
 3. If-else statements (also while, et al) MAY be written on a single
     line, but MUST use brackets.
+
   - Incorrect:
 
     if (isUndead) grabFire();
@@ -294,6 +306,7 @@ be preferred to expressions):
 
 4. Parenthesis in conditional statements (if, while, for, etc.) SHOULD
     have a space before them.
+
   - Incorrect:
 
     if(isNpc) {
@@ -308,6 +321,7 @@ be preferred to expressions):
 
 5. Parentheses in function-expressions SHOULD NOT have a space before
     them.
+
   - Incorrect:
 
     function getArmorClass (armorType, dexterity) {
@@ -321,6 +335,7 @@ be preferred to expressions):
     }
 
 6. Commas SHOULD be followed by spaces.
+
   - Incorrect:
 
     getExperiencePoints(monster,hitPoints);
@@ -336,6 +351,7 @@ be preferred to expressions):
     line (so-called ‘Allman style’), due to automatic
     semicolon-insertion when returning an object literal. Leading commas
     should align vertically with the closing bracket on the final line.
+
   - Incorrect:
 
     var newCharacter = {
@@ -344,7 +360,7 @@ be preferred to expressions):
       isNpc:false
     };
 
-    -   Also incorrect:
+  - Also incorrect:
 
     var newCharacter = {
       race : 'gnome',
@@ -361,6 +377,7 @@ be preferred to expressions):
     };
 
 8. Operators SHOULD both have a space before and after.
+
   - Incorrect:
 
     var message = speaksDrow? getMessageinDrow():'You do not speak Drow.';
@@ -379,6 +396,7 @@ be preferred to expressions):
 
 9. Lengthy string parameters SHOULD be placed into variables before
     using.
+
   - Incorrect:
 
     var elem = document.getElementById('charClass-' + charClass +
