@@ -189,7 +189,7 @@ be preferred to expressions):
 
 3. For statements:
 
-            for (var i = 0; i < guards.length; i++) {
+            for (var i = 0, ii = guards.length; i < ii; i++) {
               rollTwentySided(guards[i]);
             }
 
