@@ -3,9 +3,10 @@
 This set of guidelines started its life as the [JavaScript
 styleguide for OSAF's Chandler Web
 UI](http://chandlerproject.org/bin/view/Projects/JavaScriptStyleguide),
-circa 2006. Probably the biggest changes since then are the
+circa 2006. ~~Probably the biggest changes since then are the
 switch to two-space indentation, and use of leading commas
-instead of trailing ('comma-first').
+instead of trailing ('comma-first').~~ Commas go at the end of the 
+lines, don't believe anyone who tells you otherwise.
 
 These are merely guidelines. They should not be adhered to mechanically,
 especially if a deviation would make your code more readable.
@@ -108,32 +109,35 @@ Enumeration keys: Uppercase with underscores
 
 1. Variables SHOULD be initialized at the top of function scope — if
     possible, in a way that indicates what type of value they will hold.
-    Null initializations are acceptable. There should be only one `var`
+    Null initializations are acceptable. ~~There should be only one `var`
     keyword, used on the first variable declaration, and subsequent
-    variables should be declared using an initial comma.
+    variables should be declared using an initial comma.~~ Every variable
+    should have it's own var statement so that you don't accidentally
+    create a global variable.
   - Incorrect:
-
-            var magicItemCount;
-            var magicSwordName = '';
-            var wizardNpc;
-  - Correct:
 
             var magicItemCount = 0
               , magicSwordName = ''
               , wizardNpc = null;
 
+  - Correct:
+
+            var magicItemCount;
+            var magicSwordName = '';
+            var wizardNpc;
+
 2. Variable declarations SHOULD NOT include extra spaces before the
     equals sign to align the variable values.
   - Incorrect:
 
-            var currentThiefLevel = 8
-              , canBackstab       = true
-              , isNpc             = true;
+            var currentThiefLevel = 8;
+            var canBackstab       = true
+            var isNpc             = true;
   - Correct:
 
-            var currentThiefLevel = 8
-              , canBackstab = true
-              , isNpc = true;
+            var currentThiefLevel = 8;
+            var canBackstab = true;
+            var isNpc = true;
 
 3. Variable names SHOULD NOT include ‘temp’ or ‘tmp’. — all local
     variables are by definition temporary.
@@ -232,17 +236,17 @@ be preferred to expressions):
 7. Object literal:
 
             var obj = {
-              spellName: 'Invisible Stalker'
-            , numberOfFighters: 3
-            , checkForTraps = function() {
+              spellName: 'Invisible Stalker',
+              numberOfFighters: 3,
+              checkForTraps = function() {
                 // Do trap checking
               }
             };
 
             var obj = {
-              staff: 'Staff of the Magi'
-            , wand: 'Wand of Negation'
-            , misc: 'Boots of Elvenkind'
+              staff: 'Staff of the Magi',
+              wand: 'Wand of Negation',
+              misc: 'Boots of Elvenkind'
             };
 
 ### Notes
@@ -331,16 +335,16 @@ be preferred to expressions):
   - Also incorrect:
 
             var newCharacter = {
-              race : 'gnome',
-              class : 'figheter',
-              isNpc : false
+               race : 'gnome',
+            ,  class : 'figheter',
+            ,  isNpc : false
             };
   - Correct:
 
             var newCharacter = {
-              race: 'gnome'
-            , class: 'figheter'
-            , isNpc: false
+              race: 'gnome',
+              class: 'figheter',
+              isNpc: false
             };
 
 8. Operators SHOULD both have a space before and after.
