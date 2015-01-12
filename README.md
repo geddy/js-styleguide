@@ -252,10 +252,10 @@ be preferred to expressions):
     name of ‘function.’)
   - Incorrect:
 
-            var rollInitiative = function() { // Roll die here };
+            var rollInitiative = function() { /* Roll die here */ };
   - Correct:
 
-            var rollInitiative = function () { // Roll die here };
+            var rollInitiative = function () { /* Roll die here */ };
 
 2. Line continuations should be indicated by double indentation.
   - Incorrect:
@@ -366,6 +366,6 @@ be preferred to expressions):
   - Correct:
 
             var char = 'charClass-' + charClass
-              , combat = 'combatStatus-' + armorClass + '-' + toHitBonus
+              , combat = 'combatStats-' + armorClass + '-' + toHitBonus
               , elem = document.getElementById(char + '_' + combat);
 
