@@ -164,16 +164,15 @@ Enumeration keys: Uppercase with underscores
 
 ### Overview
 
-1. Function-declarations / function-expressions (in general declarations should
-be preferred to expressions):
-
-            var checkForSecretDoors = function (race, level) {
-              // Stuff for check here
-            };
+1. Function-declarations / function-expressions:
 
             function checkForTraps(dexterity, level) {
             // Do stuff to check for traps here
             }
+
+            var checkForSecretDoors = function (race, level) {
+              // Stuff for check here
+            };
 
 2. If statements:
 
@@ -229,7 +228,7 @@ be preferred to expressions):
               runLikeHell();
             }
 
-7. Object literal:
+7. Object literal (align the commas with the closing bracket below them):
 
             var obj = {
               spellName: 'Invisible Stalker'
@@ -247,9 +246,9 @@ be preferred to expressions):
 
 ### Notes
 
-1. Function literals MUST include a space between the word ‘function’
-    and the parentheses. (Otherwise it appears to be a function with the
-    name of ‘function.’)
+1. Function expressions MUST include a space between the word ‘function’
+    and the parentheses. (Otherwise it appears that you're invoking a
+    function named ‘function.’)
   - Incorrect:
 
             var rollInitiative = function() { /* Roll die here */ };
@@ -293,8 +292,8 @@ be preferred to expressions):
               ignoreTalk();
             }
 
-5. Parentheses in function-expressions SHOULD NOT have a space before
-    them.
+5. Parentheses in function declaration SHOULD NOT have a space between
+    them and the name of the function.
   - Incorrect:
 
             function getArmorClass (armorType, dexterity) {
