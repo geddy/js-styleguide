@@ -1,5 +1,7 @@
 # JS Styleguide
 
+[![Join the chat at https://gitter.im/geddy/js-styleguide](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/geddy/js-styleguide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This set of guidelines started its life as the [JavaScript
 styleguide for OSAF's Chandler Web
 UI](http://chandlerproject.org/bin/view/Projects/JavaScriptStyleguide),
