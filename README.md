@@ -79,7 +79,7 @@ Enumeration keys: Uppercase with underscores
 
             wizardHat, vorpalBlade
 
-2. Acronyms in variable/method names SHOULD NOT be upppercased.
+2. Acronyms in variable/method names SHOULD NOT be uppercased.
   - Incorrect:
 
             bartenderNPC, newRPG
